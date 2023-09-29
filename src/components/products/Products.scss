@@ -1,0 +1,187 @@
+.products {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FBFBFB;
+    
+    h1 {
+      margin: 0;
+      padding: 4.25rem 0;
+      color: #564AFF;
+      font-size: 2.25rem;
+      font-weight: bold;
+    }
+  
+    .tableContainer {
+      width: 90%;
+    //   overflow-x: auto;
+      margin-top: 1rem;
+  
+      table {
+        border-collapse: separate;
+        border-spacing: 0 0.625rem;
+        width: 100%;
+  
+        thead {
+          background-color: #564AFF;
+          color: #ffffff;
+          text-align: left;
+  
+          tr {
+            th {
+              padding: 21px;
+            }
+            th:nth-child(1) {
+                width: 50%;
+            }
+            th:nth-child(2) {
+                width: 16%;
+            }
+            th:nth-child(3) {
+                width: 16%;
+                text-align: center;
+            }
+            th:nth-child(4) {
+                width: 16%;
+            }
+          }
+        }
+  
+        tbody {
+          tr {
+            box-shadow: 0px 2px 5px #0000001A;
+            border-radius: 3px;
+            margin: 0.625rem 0;
+            &:hover{
+                cursor: pointer;
+                background-color: #f2f2f2; /* Couleur de fond au survol */
+            }
+
+            .productLink {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                width: 100%;
+            }
+
+
+            td:nth-child(1) {
+                width: 50%;
+            }
+
+            td:nth-child(2) {
+                width: 16%;
+            }
+
+            td:nth-child(3) {
+                width: 16%;
+                text-align: center;
+            }
+
+            td:nth-child(4) {
+                width: 16%;
+            }
+
+            .productTitle{
+                font-weight: bold;
+                padding: 1.313rem;
+                td {
+                  margin: 1.313rem 1.25rem;
+                  color: #707070;
+                }
+            }
+            
+            .productPriceVAT{
+              text-align: end;
+              padding-right: 1.25rem;
+            }
+            .productCategory {
+                padding: 0.813rem;
+                text-align: center;
+                color: #ffffff;
+                border-radius: 1.063rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: fit-content;
+            } 
+          }
+        }
+      }
+    }
+}
+
+@media (width < 670px) {
+  .products {
+    width: 100%;   
+    h1 {
+      margin: auto;
+      padding: 2.25rem 0;
+      font-size: 1.5rem;
+    }
+    
+    .tableContainer {
+      table {
+        thead {
+          display: block;
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        tbody {
+          tr {
+            display: block;
+            margin-bottom: 1rem;
+            &:hover{
+              cursor: default;
+              background-color: transparent;
+            }
+            td {
+              display: block;
+              text-align: left;
+            }
+            td:nth-child(1) {
+              width: auto;
+            }
+  
+            td:nth-child(2) {
+              width: auto;
+            }
+  
+            td:nth-child(3) {
+              width: auto;
+              text-align: right;
+              padding-right: 1.25rem;
+              &::before{
+                content: "Price : ";
+              }
+            }
+  
+            td:nth-child(4) {
+                width: auto;
+                padding-bottom: 1rem;
+                &::before{
+                  content: "Price VAT : ";
+                }
+            }
+          }
+        }
+      }
+    }
+  }   
+}
+
+@media ( 900px >= width >= 670px){
+  .products {
+    width: 100%;
+    h1 {
+      padding: 3.25rem 0;
+      font-size: 2rem;
+    }
+  }
+}
+
+

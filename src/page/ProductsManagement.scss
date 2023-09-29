@@ -1,0 +1,38 @@
+.pageContainer {
+  display: flex;
+  height: 100vh;
+}
+  
+.contentContainer {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+  @media (width < 425px) {
+    .pageContainer{
+      display: block;
+    }
+
+    .contentContainer{
+      overflow: visible;
+    }
+  }
+  
+  @media ( 600px > width >= 425px){
+    .pageContainer{
+      display: block;
+    }
+
+    .contentContainer{
+      overflow: visible;
+    }
+  }
+  
+  @media ( 900px >= width >= 600px){
+  
+  }
+  
+  @media ( width >= 900px){
+  
+  }
+  

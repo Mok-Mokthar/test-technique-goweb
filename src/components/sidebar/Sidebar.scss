@@ -1,0 +1,179 @@
+.sidebar{
+    color: white;
+    background-color: #564AFF;
+    width: 18%;
+    height: 100vh;
+    display: block;
+    float: left;
+
+    .hidden{
+        display: none !important;
+    }
+
+    a:visited, a:link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .logoContainer{
+        margin-top: 3.625rem;
+        display: flex;
+        justify-content: center;
+        .logo{
+
+        }
+        .toggle{
+            display: none;
+        }
+    }
+
+    .content{
+        margin: 7.25rem 0 0 3.125rem;
+        .navigation{
+            margin: 2.063rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2.063rem;
+        }
+    }
+    hr{
+        margin: 0 3.125rem;
+    }
+    .connexion{
+        margin: 3.125rem 0 0 3.125rem;
+    }
+}
+
+@media (width < 425px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+
+        .hidden{
+            display: none;
+        }
+
+        .logoContainer{
+            margin-bottom: 3.5rem;
+            display: flex;
+            gap: 30px;
+            .toggle{
+                transform: scale(1.5);
+                display: block;
+                margin: auto 0;
+            }
+        }
+        .content{
+            margin: 0 3.125rem 0 3.125rem;;
+            p{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .navigation{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .connexion{
+            margin: 2.25rem 0;
+            display: flex;
+            justify-content: center;
+
+            .hidden{
+                display: none;
+            }
+        }
+    }
+}
+
+@media ( 600px > width >= 425px){
+    .sidebar{
+        width: 100%;
+        height: auto;
+
+        .hidden{
+            display: none;
+        }
+
+        .logoContainer{
+            margin-bottom: 3.5rem;
+            display: flex;
+            gap: 30px;
+            .toggle{
+                transform: scale(1.5);
+                display: block;
+                margin: auto 0;
+            }
+        }
+        .content{
+            margin: 0 3.125rem 0 3.125rem;;
+            p{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .navigation{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+        .connexion{
+            margin: 2.25rem 0;
+            display: flex;
+            justify-content: center;
+
+            .hidden{
+                display: none;
+            }
+        }
+    }
+}
+
+@media ( 900px >= width >= 600px){
+    .sidebar{
+        width: 18%;
+        height: 100vh;
+
+        .hidden{
+            display: block !important;
+        }
+
+        .logoContainer{
+            margin: 3.625rem 1rem;
+            .logo{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .toggle{
+                display: none;
+            }
+        }
+        .content{
+            margin: 0 0.75rem;
+        }
+        .connexion{
+            margin: 2.25rem 0.75rem;
+            display: flex !important;
+            justify-content: left;
+        }
+    }
+}
+
+@media ( width >= 900px){
+
+    .sidebar{
+        width: 25%;
+
+        .hidden{
+            display: block !important;
+        }
+
+        .content{
+            margin: 7.25rem 3.125rem 0 3.125rem;
+        }
+    }
+}

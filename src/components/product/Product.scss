@@ -1,0 +1,490 @@
+.product{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FBFBFB;
+    height: 100vh;
+
+    .headerWrapper{
+        display: flex;
+        .returnArrow{
+            font-size: 2.25rem;
+            margin: 0;
+            padding: 4.25rem 0;
+            color: #707070;
+        }
+    
+        h1 {
+            margin: 0;
+            padding: 4.25rem 0;
+            color: #564AFF;
+            font-size: 2.25rem;
+            font-weight: bold;
+        }
+    }
+
+    .contentContainer{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        .left{
+            .imageContainer{
+                width: auto;
+                height: 34rem;
+                background-color: #FFFFFF;
+                box-shadow: 0px 2px 5px #0000001A;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 50%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+        .right{
+            width: 44.688rem;
+            height: 39.813rem;
+            margin-left: 2.5rem;
+            .topSection{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .description{
+                    width: 60%;
+                    h2{
+                        color: #564AFF;
+                    }
+                    p{
+                        text-align: left;
+                        color: #707070;
+                    }
+                }
+
+                .category{
+                    h2{
+                        color: #564AFF;
+                    }
+                    span{
+                        color: #ffffff;
+                        border-radius: 17px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .bottomSection{
+                .price{
+                    h2{
+                        color: #564AFF;
+                    }
+                    .priceContent{
+                        display: flex;
+                        gap: 4.375rem;
+                        input[type=text]{
+                            border: 1px solid #564AFF;
+                            border-radius: 3px;
+                            padding-left: 1rem;
+                            width: 9rem;
+                        }
+                        .priceVAT{
+                            p{
+                                color: #707070;
+                                strong{
+                                    font-weight: bold;
+                                    color: #313030;
+                                }
+                            }
+                        }
+                    }
+                    .update{
+                        margin-top: 2.5rem;
+                        button{
+                            color: #ffffff;
+                            background-color: #564AFF;
+                            border: 1px solid #564AFF;
+                            border-radius: 3px;
+                            width: 8.563rem;
+                            height: 2.5rem;
+                            &:hover{
+                                background-color: #564affd3;
+                            }
+                            &:active{
+                                background-color: #3b2dff;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width < 425px) {
+    .product{
+        .headerWrapper{
+            .returnArrow{
+                display: none;
+            }
+        
+            h1 {
+                margin: 0 1.875rem;
+                padding: 3.25rem 0;
+                font-size: 1.75rem;
+            }
+        }
+    
+        .contentContainer{
+            flex-direction: column;
+            align-items: center;
+            .left{
+                margin-bottom: 1rem;
+                .imageContainer{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .right{
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                .topSection{
+                    flex-direction: column;
+                    align-items: center;
+                    .description{
+                        width: 100%;
+                        text-align: center;
+                        p {
+                            text-align: left;
+                            padding-right: 0;
+                            margin: 0 1.875rem;
+                        }
+                    }
+    
+                    .category{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .bottomSection{
+                    .price{
+                        border-top: solid 1px #cbcbcb;
+                        margin-top: 1.875rem;
+                        text-align: center;
+                        .priceContent{
+                            flex-direction: row-reverse;
+                            gap: 1rem;
+                            justify-content: center;
+                            input[type=text]{
+                                width: 4rem;
+                            }
+                            .priceVAT{
+                                p{
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                        .update{
+                            margin: 1rem 0 4rem 0;
+                            button{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( 600px > width >= 425px){
+    .product{
+        .headerWrapper{
+            .returnArrow{
+                display: none;
+            }
+        
+            h1 {
+                margin: 0 1.875rem;
+                padding: 3.25rem 0;
+                font-size: 1.75rem;
+            }
+        }
+    
+        .contentContainer{
+            flex-direction: column;
+            align-items: center;
+            .left{
+                margin-bottom: 1rem;
+                .imageContainer{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .right{
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                .topSection{
+                    flex-direction: column;
+                    align-items: center;
+                    .description{
+                        width: 100%;
+                        text-align: center;
+                        p {
+                            text-align: left;
+                            padding-right: 0;
+                            margin: 0 1.875rem;
+                        }
+                    }
+    
+                    .category{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .bottomSection{
+                    .price{
+                        border-top: solid 1px #cbcbcb;
+                        margin-top: 1.875rem;
+                        text-align: center;
+                        .priceContent{
+                            flex-direction: row-reverse;
+                            gap: 1rem;
+                            justify-content: center;
+                            input[type=text]{
+                                width: 4rem;
+                            }
+                            .priceVAT{
+                                p{
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                        .update{
+                            margin: 1rem 0 4rem 0;
+                            button{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( 700px >= width >= 600px){
+    .product{
+        .headerWrapper{
+            .returnArrow{
+                display: none;
+            }
+        
+            h1 {
+                margin: 0 1.875rem;
+                padding: 3.25rem 0;
+                font-size: 1.75rem;
+            }
+        }
+    
+        .contentContainer{
+            flex-direction: column;
+            align-items: center;
+            .left{
+                margin-bottom: 1rem;
+                .imageContainer{
+                    width: 100%;
+                    height: auto;
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+    
+            .right{
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                .topSection{
+                    flex-direction: column;
+                    align-items: center;
+                    .description{
+                        width: 100%;
+                        text-align: center;
+                        p {
+                            text-align: left;
+                            padding-right: 0;
+                            margin: 0 1.875rem;
+                        }
+                    }
+    
+                    .category{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .bottomSection{
+                    .price{
+                        border-top: solid 1px #cbcbcb;
+                        margin-top: 1.875rem;
+                        text-align: center;
+                        .priceContent{
+                            flex-direction: row-reverse;
+                            gap: 1rem;
+                            justify-content: center;
+                            input[type=text]{
+                                width: 4rem;
+                            }
+                            .priceVAT{
+                                p{
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                        .update{
+                            margin: 1rem 0 4rem 0;
+                            button{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( 900px >= width >= 700px){
+    .product{
+        .headerWrapper{
+            .returnArrow{
+                display: none;
+            }
+        
+            h1 {
+                margin: 0 1.875rem;
+                padding: 3.25rem 0;
+                font-size: 1.75rem;
+            }
+        }
+    
+        .contentContainer{
+            flex-direction: column;
+            align-items: center;
+            .left{
+                margin-bottom: 1rem;
+                .imageContainer{
+                    width: 100%;
+                    height: auto;
+                    img{
+                        width: 23%;
+                    }
+                }
+            }
+    
+            .right{
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                .topSection{
+                    flex-direction: column;
+                    align-items: center;
+                    .description{
+                        width: 100%;
+                        text-align: center;
+                        p {
+                            text-align: left;
+                            padding-right: 0;
+                            margin: 0 1.875rem;
+                        }
+                    }
+    
+                    .category{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .bottomSection{
+                    .price{
+                        border-top: solid 1px #cbcbcb;
+                        margin-top: 1.875rem;
+                        text-align: center;
+                        .priceContent{
+                            flex-direction: row-reverse;
+                            gap: 1rem;
+                            justify-content: center;
+                            input[type=text]{
+                                width: 4rem;
+                            }
+                            .priceVAT{
+                                p{
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                        .update{
+                            margin: 1rem 0 4rem 0;
+                            button{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( 1380px >= width >= 900px){
+    .product{
+        .headerWrapper{
+            .returnArrow{
+                left: auto;
+            }
+        
+            h1 {
+                margin: 0 3rem;
+            }
+        }
+    
+        .contentContainer{
+            flex-direction: column;
+            .left{
+                .imageContainer{
+                    width: auto;
+                    height: auto;
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+    
+            .right{
+                width: auto;
+                height: auto;
+                .topSection{
+                    .description{
+                        width: 70%;
+                    }
+                }
+
+            }
+        }
+    }
+}
